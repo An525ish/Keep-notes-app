@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4ae2e772d9.js" crossorigin="anonymous"></script>
+    <title>Keep Notes</title>
+</head>
+<body>
+    <header class="main-heading">
+        <h1> Keep Notes 📝</h1>
+        <div class="btn">
+                <button class="add-note">
+                    <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Add Note</span>
+                  </button>
+            </button>
+        </div>
+    </header>
+    <main>
+            <div class="popup-form">
+                <form action="#" class="popup active">
+                    <div class="heading">
+                        <h2 class="form-title"> Add a new Note </h2>
+                        <i class="fa-solid fa-xmark cross"></i>
+                    </div>
+                    <label for="head"> Title</label>
+                    <input type="text" name="head" autofocus spellcheck="false">
+                    <label for="desc"> Description </label>
+                    <textarea name="desc" id="txtaria" class="txtaria" rows="10" spellcheck="false"></textarea>
+                    <button class="addnote" type="submit">Add Note</button>
+                </form>
+            </div>
+            <div class="note-container"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
